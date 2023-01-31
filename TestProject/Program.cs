@@ -19,39 +19,10 @@ namespace TestProject
             LawnMower lawnMower = new LawnMower();
             lawnMower.Stop();
 
+            Boat boat = new Boat();
+            boat.Start();
+
             Console.ReadLine();
-        }
-    }
-
-    interface IVehicle
-    {
-        void Start();
-        void Stop();
-    }
-
-    public class Car : IVehicle
-    {
-        public void Start()
-        {
-            Console.WriteLine("Car has started");
-        }
-
-        public void Stop()
-        {
-            Console.WriteLine("Car has stopped");
-        }
-    }
-
-    public class LawnMower : IVehicle
-    {
-        public void Start()
-        {
-            Console.WriteLine("Lawn Mower has started");
-        }
-
-        public void Stop()
-        {
-            Console.WriteLine("Lawn Mower has stopped");
         }
     }
 }
